@@ -1,8 +1,23 @@
 import React from "react";
 import headimg from "../img/Lunch1_vlksgq.webp";
 import "./StartingPage.css";
+import { useDispatch, useSelector } from "react-redux";
+import SignPage from "./SignUp";
+import LoginPage from "./Login";
+import { getLogin } from "../Slice/loginSlice";
+import { getSignUp } from "../Slice/signUpSlice";
 
 function StartingPage() {
+  const signUp = useSelector((state) => state.signUp.signUp);
+  const login = useSelector((state) => state.login.login);
+  const dispatch = useDispatch();
+  //
+  const handleLogin = () => {
+    dispatch(getLogin(true));
+  };
+  const handleSign = () => {
+    dispatch(getSignUp(true));
+  };
   return (
     <>
       <div className="sectionOne">
@@ -14,8 +29,12 @@ function StartingPage() {
               </svg>
             </div>
             <div className="btn">
-              <button className="login">Login</button>
-              <button className="signup">Sign up</button>
+              <button className="login" onClick={handleLogin}>
+                Login
+              </button>
+              <button className="signup" onClick={handleSign}>
+                Sign up
+              </button>
             </div>
           </div>
           <div className="title">Cooking gone wrong?</div>
@@ -63,6 +82,8 @@ function StartingPage() {
           <img src={headimg} alt="headImg"></img>
         </div>
       </div>
+      {signUp && <SignPage />}
+      {login && <LoginPage />}
     </>
   );
 }

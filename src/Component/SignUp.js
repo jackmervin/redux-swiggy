@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "./SignUp.css";
+import { useDispatch } from "react-redux";
+import { getSignUp } from "../Slice/signUpSlice";
 
 function SignPage() {
+  const dispatch = useDispatch();
+
   const [userdata, setuserdata] = useState({
     phoneNo: "",
     name: "",
@@ -10,7 +14,9 @@ function SignPage() {
   //
 
   //
-  const HandleClose = () => {};
+  const HandleClose = () => {
+    dispatch(getSignUp(false));
+  };
   //
   const handChangPage = () => {};
   //

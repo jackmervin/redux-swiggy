@@ -1,14 +1,18 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { getLogin } from "../Slice/loginSlice";
 
 function LoginPage() {
   //Set useState and useDispatch
-
+  const dispatch = useDispatch();
   //
 
   //Get user data
 
   //Handle Component
-  const HandleClose = () => {};
+  const HandleClose = () => {
+    dispatch(getLogin(false));
+  };
   //Handle both component
   const handChangPage = () => {};
   //
