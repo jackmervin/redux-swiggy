@@ -39,6 +39,8 @@ function SignPage() {
     }
     dispatch(addUsers(userdata));
     setuserdata({ ...userdata, phoneNo: "", name: "", email: "" });
+    dispatch(getSignUp(false));
+    dispatch(getLogin(true));
   };
 
   return (

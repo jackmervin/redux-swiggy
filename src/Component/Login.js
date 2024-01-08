@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getLogin } from "../Slice/loginSlice";
+import { getLogin, getloginCon } from "../Slice/loginSlice";
 import { getSignUp } from "../Slice/signUpSlice";
 
 function LoginPage() {
   //Set useState and useDispatch
   const users = useSelector((state) => state.signUp.users);
+  const loginCon = useSelector((state) => state.login.loginCon);
   const dispatch = useDispatch();
 
   const [phoneNo, setPhoneNo] = useState("");
@@ -34,6 +35,8 @@ function LoginPage() {
     condi
       ? alert("login successful")
       : alert("Login Failed: Your user ID  is incorrect");
+    condi && dispatch(getLogin(false));
+    dispatch(getloginCon(condi));
   };
   return (
     <>
