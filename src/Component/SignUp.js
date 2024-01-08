@@ -1,28 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./SignUp.css";
-import { useDispatch } from "react-redux";
-import { getSignUp } from "../Slice/signUpSlice";
-
+import { useDispatch, useSelector } from "react-redux";
+import { addUsers, getSignUp } from "../Slice/signUpSlice";
+import { getLogin } from "../Slice/loginSlice";
+let id = 0;
 function SignPage() {
+  const users = useSelector((state) => state.signUp.users);
   const dispatch = useDispatch();
-
   const [userdata, setuserdata] = useState({
     phoneNo: "",
     name: "",
     email: "",
+    id: id++,
   });
-  //
 
-  //
   const HandleClose = () => {
     dispatch(getSignUp(false));
   };
   //
-  const handChangPage = () => {};
+  const handChangPage = () => {
+    dispatch(getSignUp(false));
+    dispatch(getLogin(true));
+  };
   //
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (userdata.phoneNo === "") {
+      return alert("enter the phoneNo");
+    }
+    if (userdata.phoneNo.length !== 10) {
+      return alert("enter valid number");
+    }
+    if (userdata.name === "") {
+      return alert("enter the Name");
+    }
+    if (userdata.email === "") {
+      return alert("enter the email");
+    }
+    dispatch(addUsers(userdata));
+    setuserdata({ ...userdata, phoneNo: "", name: "", email: "" });
   };
+
   return (
     <>
       <div className="singnPage">

@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   signUp: false,
+  users: [],
 };
 const signUpSlice = createSlice({
   name: "signUp",
@@ -9,8 +10,11 @@ const signUpSlice = createSlice({
     getSignUp: (state, actions) => {
       state.signUp = actions.payload;
     },
+    addUsers: (state, actions) => {
+      state.users.push(actions.payload);
+    },
   },
 });
 
 export default signUpSlice.reducer;
-export const { getSignUp } = signUpSlice.actions;
+export const { getSignUp, addUsers } = signUpSlice.actions;

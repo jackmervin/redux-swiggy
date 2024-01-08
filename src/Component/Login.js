@@ -1,22 +1,40 @@
-import React from "react";
-import { useDispatch } from "react-redux";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { getLogin } from "../Slice/loginSlice";
+import { getSignUp } from "../Slice/signUpSlice";
 
 function LoginPage() {
   //Set useState and useDispatch
+  const users = useSelector((state) => state.signUp.users);
   const dispatch = useDispatch();
-  //
 
-  //Get user data
-
+  const [phoneNo, setPhoneNo] = useState("");
   //Handle Component
   const HandleClose = () => {
     dispatch(getLogin(false));
   };
   //Handle both component
-  const handChangPage = () => {};
+  const handChangPage = () => {
+    dispatch(getLogin(false));
+    dispatch(getSignUp(true));
+  };
   //
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (phoneNo === "") {
+      return alert("enter the phoneNo");
+    }
+    if (phoneNo.length !== 10) {
+      return alert("enter valid number");
+    }
+    var condi = users.some((user) => {
+      return phoneNo === user.phoneNo;
+    });
+    setPhoneNo("");
+    condi
+      ? alert("login successful")
+      : alert("Login Failed: Your user ID  is incorrect");
+  };
   return (
     <>
       <div className="singnPage">
@@ -61,7 +79,12 @@ function LoginPage() {
             </div>
           </div>
           <form className="form" onSubmit={handleSubmit}>
-            <input placeholder="Phone Number" type="number" />
+            <input
+              placeholder="Phone Number"
+              type="number"
+              value={phoneNo}
+              onChange={(e) => setPhoneNo(e.target.value)}
+            />
             <button type="submit">LOGIN</button>
             <p>By creating an account, I accept the Terms & Conditions</p>
           </form>
