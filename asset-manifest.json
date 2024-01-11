@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/redux-swiggy/static/css/main.102d6183.css",
-    "main.js": "/redux-swiggy/static/js/main.8195572d.js",
+    "main.css": "/redux-swiggy/static/css/main.f1518cfe.css",
+    "main.js": "/redux-swiggy/static/js/main.ea385e4a.js",
+    "static/media/img1.png": "/redux-swiggy/static/media/img1.ed15abf31c5c3d3595fd.png",
+    "static/media/img4.png": "/redux-swiggy/static/media/img4.73e84bc05c8c1edcb074.png",
+    "static/media/img3.png": "/redux-swiggy/static/media/img3.f3e2deba0be85be6e1af.png",
+    "static/media/img2.png": "/redux-swiggy/static/media/img2.9dd2367b19d3fd7a5552.png",
+    "static/media/img5.png": "/redux-swiggy/static/media/img5.eca040995327adfe5c1b.png",
     "static/media/Lunch1_vlksgq.webp": "/redux-swiggy/static/media/Lunch1_vlksgq.2fe9de1eecea3436b08e.webp",
     "index.html": "/redux-swiggy/index.html",
-    "main.102d6183.css.map": "/redux-swiggy/static/css/main.102d6183.css.map",
-    "main.8195572d.js.map": "/redux-swiggy/static/js/main.8195572d.js.map"
+    "main.f1518cfe.css.map": "/redux-swiggy/static/css/main.f1518cfe.css.map",
+    "main.ea385e4a.js.map": "/redux-swiggy/static/js/main.ea385e4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.102d6183.css",
-    "static/js/main.8195572d.js"
+    "static/css/main.f1518cfe.css",
+    "static/js/main.ea385e4a.js"
   ]
 }
