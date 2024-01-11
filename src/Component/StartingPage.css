@@ -284,11 +284,11 @@
     display: none;
   }
   .title {
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 20px;
   }
   .titelpa {
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 20px;
   }
   .findLocation {
@@ -302,10 +302,10 @@
     padding: 15px;
   }
   .input input {
-    font-size: 10px;
+    font-size: 16px;
   }
   .input button {
-    font-size: 5px;
+    font-size: 16px;
   }
   .svg {
     width: 5px;
@@ -315,7 +315,7 @@
   .cities {
     color: #a9abb2;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 20px;
     margin-top: 45px;
   }
@@ -328,29 +328,30 @@
   }
   .logo svg {
     fill: #fc8019;
-    width: 100px;
+    width: 200px;
     height: 40px;
-    margin-left: 30px;
+    margin-left: 5px;
+  }
+  .input button {
+    display: none;
   }
 }
 @media (max-width: 410px) {
   .logo svg {
     fill: #fc8019;
-    width: 100px;
+    width: 200px;
     height: 40px;
-    margin-left: 30px;
+    margin-left: 5px;
   }
 
   .login {
-    font-size: 12px;
-
-    padding: 5px 15px;
+    font-size: 16px;
+    padding: 10px 15px;
   }
 
   .signup {
-    font-size: 12px;
-
-    padding: 5px 15px;
+    font-size: 16px;
+    padding: 10px 15px;
   }
   .input button {
     display: none;

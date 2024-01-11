@@ -1,0 +1,47 @@
+.nav2 {
+  display: flex;
+  box-shadow: 0 15px 40px -20px rgba(40, 44, 63, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: white;
+}
+.nav-left {
+  display: flex;
+  width: 40%;
+}
+.logo svg {
+  width: 100px;
+  height: 50px;
+  margin: 15px 20px 15px 60px;
+}
+.location {
+  color: #686b78;
+  font-size: 14px;
+  margin: auto 0;
+}
+.nav-right {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  margin: auto;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+.Search,
+.offers,
+.help,
+.profile,
+.Cart {
+  color: #3d4152;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.mainBody {
+  margin: auto;
+  padding: 40px 0;
+  box-sizing: border-box;
+}

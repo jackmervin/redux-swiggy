@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./SignUp.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addUsers, getSignUp } from "../Slice/signUpSlice";
 import { getLogin } from "../Slice/loginSlice";
 let id = 0;
 function SignPage() {
-  const users = useSelector((state) => state.signUp.users);
   const dispatch = useDispatch();
   const [userdata, setuserdata] = useState({
     phoneNo: "",
@@ -26,16 +25,16 @@ function SignPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (userdata.phoneNo === "") {
-      return alert("enter the phoneNo");
+      return alert("Please enter the phoneNo");
     }
     if (userdata.phoneNo.length !== 10) {
-      return alert("enter valid number");
+      return alert("Please enter a valid phoneNo");
     }
     if (userdata.name === "") {
-      return alert("enter the Name");
+      return alert("Please enter the Name");
     }
     if (userdata.email === "") {
-      return alert("enter the email");
+      return alert("Please enter a valid email");
     }
     dispatch(addUsers(userdata));
     setuserdata({ ...userdata, phoneNo: "", name: "", email: "" });

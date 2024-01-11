@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   login: false,
   loginCon: false,
+  loginData: {},
 };
 
 const loginSlice = createSlice({
@@ -14,8 +15,11 @@ const loginSlice = createSlice({
     getloginCon: (state, actions) => {
       state.loginCon = actions.payload;
     },
+    getLoginData: (state, actions) => {
+      state.loginData = actions.payload;
+    },
   },
 });
 
 export default loginSlice.reducer;
-export const { getLogin, getloginCon } = loginSlice.actions;
+export const { getLogin, getloginCon, getLoginData } = loginSlice.actions;

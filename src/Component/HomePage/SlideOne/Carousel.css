@@ -1,0 +1,45 @@
+.carouesl {
+  width: 850px;
+  height: 350px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.btnContainer {
+  display: flex;
+  margin-left: auto;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.btn1 {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: none;
+  background: rgb(216, 216, 221);
+}
+.btnCon1 {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: none;
+  background: rgb(233, 233, 240);
+}
+.btn2 {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: none;
+  background: rgb(216, 216, 221);
+}
+.btnCon2 {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: none;
+  background: rgb(233, 233, 240);
+}

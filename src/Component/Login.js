@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getLogin, getloginCon } from "../Slice/loginSlice";
+import { getLogin, getLoginData, getloginCon } from "../Slice/loginSlice";
 import { getSignUp } from "../Slice/signUpSlice";
 
 function LoginPage() {
@@ -31,6 +31,10 @@ function LoginPage() {
     var condi = users.some((user) => {
       return phoneNo === user.phoneNo;
     });
+    var logindata = users.filter((user) => {
+      return phoneNo === user.phoneNo;
+    });
+    dispatch(getLoginData(logindata));
     setPhoneNo("");
     condi
       ? alert("login successful")

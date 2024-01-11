@@ -6,11 +6,13 @@ import SignPage from "./SignUp";
 import LoginPage from "./Login";
 import { getLogin } from "../Slice/loginSlice";
 import { getSignUp } from "../Slice/signUpSlice";
+import { Link } from "react-router-dom";
 
 function StartingPage() {
   const signUp = useSelector((state) => state.signUp.signUp);
   const login = useSelector((state) => state.login.login);
   const loginCon = useSelector((state) => state.login.loginCon);
+  const loginData = useSelector((state) => state.login.loginData);
   const dispatch = useDispatch();
   //
   const handleLogin = () => {
@@ -40,14 +42,19 @@ function StartingPage() {
               </div>
             )}
             {loginCon && (
-              <div className="btn">
-                <button
-                  className="login"
-                  style={{ border: "1px solid black", pointerEvents: "none" }}
-                >
-                  Mervin Jacob
-                </button>
-              </div>
+              <Link to="/Home">
+                <div className="btn" style={{ cursor: "pointer" }}>
+                  <button
+                    className="login"
+                    style={{
+                      border: "1px solid black",
+                      pointerEvents: "none",
+                    }}
+                  >
+                    {loginData[0].name}
+                  </button>
+                </div>
+              </Link>
             )}
           </div>
           <div className="title">Cooking gone wrong?</div>
@@ -102,6 +109,7 @@ function StartingPage() {
           <div className="body_one_content">
             <div>
               <img
+                alt="img"
                 className="_2dYjq"
                 width="105"
                 height="199"
@@ -117,6 +125,7 @@ function StartingPage() {
           <div className="body_one_content">
             <div>
               <img
+                alt="img"
                 className="_2dYjq"
                 width="112"
                 height="206"
@@ -132,7 +141,8 @@ function StartingPage() {
           <div className="body_one_content">
             <div>
               <img
-                class="_2dYjq"
+                alt="img"
+                className="_2dYjq"
                 width="124"
                 height="188"
                 src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"

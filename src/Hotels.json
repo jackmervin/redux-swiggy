@@ -1,0 +1,345 @@
+[
+  {
+    "id": 0,
+    "hotelName": "Tasty Bites",
+    "location": "Chennai",
+    "placeInChennai": "Mylapore",
+    "rating": 4.5,
+    "discount": "20% Off",
+    "minDeliveryOrder": 250,
+    "menu": [
+      { "foodId": 0, "foodItem": "Chicken Biryani", "price": 250, "img": "" },
+      { "foodId": 1, "foodItem": "Paneer Tikka", "price": 180, "img": "" },
+      {
+        "foodId": 2,
+        "foodItem": "Vegetable Fried Rice",
+        "price": 150,
+        "img": ""
+      },
+      { "foodId": 3, "foodItem": "Butter Chicken", "price": 280, "img": "" },
+      { "foodId": 4, "foodItem": "Dal Makhani", "price": 200, "img": "" },
+      { "foodId": 5, "foodItem": "Gulab Jamun", "price": 80, "img": "" },
+      {
+        "foodId": 6,
+        "foodItem": "Chicken Manchurian",
+        "price": 220,
+        "img": ""
+      },
+      { "foodId": 7, "foodItem": "Palak Paneer", "price": 190, "img": "" },
+      { "foodId": 8, "foodItem": "Veg Biryani", "price": 180, "img": "" },
+      {
+        "foodId": 9,
+        "foodItem": "Chocolate Brownie",
+        "price": 100,
+        "img": ""
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "hotelName": "Spice Haven",
+    "location": "Chennai",
+    "placeInChennai": "T. Nagar",
+    "rating": 4.2,
+    "discount": "15% Off",
+    "minDeliveryOrder": 200,
+    "menu": [
+      { "foodId": 10, "foodItem": "Chicken Korma", "price": 260, "img": "" },
+      { "foodId": 11, "foodItem": "Fish Curry", "price": 300, "img": "" },
+      { "foodId": 12, "foodItem": "Chilli Gobi", "price": 180, "img": "" },
+      {
+        "foodId": 13,
+        "foodItem": "Paneer Butter Masala",
+        "price": 220,
+        "img": ""
+      },
+      { "foodId": 14, "foodItem": "Aloo Paratha", "price": 120, "img": "" },
+      { "foodId": 15, "foodItem": "Rasam", "price": 90, "img": "" },
+      {
+        "foodId": 16,
+        "foodItem": "Veg Hakka Noodles",
+        "price": 160,
+        "img": ""
+      },
+      { "foodId": 17, "foodItem": "Chicken 65", "price": 240, "img": "" },
+      { "foodId": 18, "foodItem": "Prawn Biryani", "price": 320, "img": "" },
+      { "foodId": 19, "foodItem": "Fruit Salad", "price": 100, "img": "" }
+    ]
+  },
+  {
+    "id": 2,
+    "hotelName": "Wok Master",
+    "location": "Chennai",
+    "placeInChennai": "Adyar",
+    "rating": 4.8,
+    "discount": "25% Off",
+    "minDeliveryOrder": 180,
+    "menu": [
+      {
+        "foodId": 20,
+        "foodItem": "Schezwan Fried Rice",
+        "price": 180,
+        "img": ""
+      },
+      { "foodId": 21, "foodItem": "Chicken Satay", "price": 220, "img": "" },
+      {
+        "foodId": 22,
+        "foodItem": "Vegetable Spring Rolls",
+        "price": 150,
+        "img": ""
+      },
+      {
+        "foodId": 23,
+        "foodItem": "Shrimp Pad Thai",
+        "price": 280,
+        "img": ""
+      },
+      {
+        "foodId": 24,
+        "foodItem": "Thai Green Curry",
+        "price": 200,
+        "img": ""
+      },
+      {
+        "foodId": 25,
+        "foodItem": "Mango Sticky Rice",
+        "price": 120,
+        "img": ""
+      },
+      {
+        "foodId": 26,
+        "foodItem": "Teriyaki Chicken",
+        "price": 240,
+        "img": ""
+      },
+      {
+        "foodId": 27,
+        "foodItem": "Vegetable Dim Sum",
+        "price": 190,
+        "img": ""
+      },
+      { "foodId": 28, "foodItem": "Kung Pao Tofu", "price": 160, "img": "" },
+      { "foodId": 29, "foodItem": "Matcha Ice Cream", "price": 80, "img": "" }
+    ]
+  },
+  {
+    "id": 3,
+    "hotelName": "Healthy Bites",
+    "location": "Chennai",
+    "placeInChennai": "Velachery",
+    "rating": 4.0,
+    "discount": "30% Off",
+    "minDeliveryOrder": 220,
+    "menu": [
+      { "foodId": 30, "foodItem": "Quinoa Salad", "price": 120, "img": "" },
+      { "foodId": 31, "foodItem": "Grilled Salmon", "price": 300, "img": "" },
+      { "foodId": 32, "foodItem": "Avocado Toast", "price": 180, "img": "" },
+      { "foodId": 33, "foodItem": "Kale Smoothie", "price": 90, "img": "" },
+      { "foodId": 34, "foodItem": "Chia Pudding", "price": 100, "img": "" },
+      { "foodId": 35, "foodItem": "Vegan Pizza", "price": 220, "img": "" },
+      {
+        "foodId": 36,
+        "foodItem": "Sweet Potato Fries",
+        "price": 150,
+        "img": ""
+      },
+      { "foodId": 37, "foodItem": "Acai Bowl", "price": 160, "img": "" },
+      { "foodId": 38, "foodItem": "Detox Juice", "price": 70, "img": "" },
+      { "foodId": 39, "foodItem": "Quinoa Bowl", "price": 200, "img": "" }
+    ]
+  },
+  {
+    "id": 4,
+    "hotelName": "Dosa Delight",
+    "location": "Chennai",
+    "placeInChennai": "Anna Nagar",
+    "rating": 4.4,
+    "discount": "18% Off",
+    "minDeliveryOrder": 200,
+    "menu": [
+      { "foodId": 40, "foodItem": "Masala Dosa", "price": 120, "img": "" },
+      { "foodId": 41, "foodItem": "Idli Sambar", "price": 100, "img": "" },
+      { "foodId": 42, "foodItem": "Plain Uttapam", "price": 150, "img": "" },
+      { "foodId": 43, "foodItem": "Rava Kesari", "price": 80, "img": "" },
+      { "foodId": 44, "foodItem": "Filter Coffee", "price": 50, "img": "" },
+      { "foodId": 45, "foodItem": "Mysore Pak", "price": 90, "img": "" },
+      {
+        "foodId": 46,
+        "foodItem": "Onion Rava Dosa",
+        "price": 130,
+        "img": ""
+      },
+      { "foodId": 47, "foodItem": "Coconut Chutney", "price": 60, "img": "" },
+      { "foodId": 48, "foodItem": "Pongal", "price": 110, "img": "" },
+      { "foodId": 49, "foodItem": "Jigarthanda", "price": 70, "img": "" }
+    ]
+  },
+  {
+    "id": 5,
+    "hotelName": "Pizza Paradise",
+    "location": "Chennai",
+    "placeInChennai": "Nungambakkam",
+    "rating": 4.7,
+    "discount": "22% Off",
+    "minDeliveryOrder": 180,
+    "menu": [
+      {
+        "foodId": 50,
+        "foodItem": "Margherita Pizza",
+        "price": 200,
+        "img": ""
+      },
+      {
+        "foodId": 51,
+        "foodItem": "Pepperoni Pizza",
+        "price": 250,
+        "img": ""
+      },
+      {
+        "foodId": 52,
+        "foodItem": "Vegetarian Supreme",
+        "price": 220,
+        "img": ""
+      },
+      {
+        "foodId": 53,
+        "foodItem": "BBQ Chicken Pizza",
+        "price": 280,
+        "img": ""
+      },
+      { "foodId": 54, "foodItem": "Hawaiian Pizza", "price": 230, "img": "" },
+      {
+        "foodId": 55,
+        "foodItem": "Mushroom Delight",
+        "price": 190,
+        "img": ""
+      },
+      { "foodId": 56, "foodItem": "Pesto Lovers", "price": 240, "img": "" },
+      {
+        "foodId": 57,
+        "foodItem": "Spinach and Feta",
+        "price": 210,
+        "img": ""
+      },
+      { "foodId": 58, "foodItem": "Meat Feast", "price": 270, "img": "" },
+      { "foodId": 59, "foodItem": "Vegan Pizza", "price": 200, "img": "" }
+    ]
+  },
+  {
+    "id": 6,
+    "hotelName": "Burger Bliss",
+    "location": "Chennai",
+    "placeInChennai": "Guindy",
+    "rating": 4.6,
+    "discount": "25% Off",
+    "minDeliveryOrder": 210,
+    "menu": [
+      {
+        "foodId": 60,
+        "foodItem": "Classic Cheeseburger",
+        "price": 180,
+        "img": ""
+      },
+      {
+        "foodId": 61,
+        "foodItem": "Bacon BBQ Burger",
+        "price": 220,
+        "img": ""
+      },
+      {
+        "foodId": 62,
+        "foodItem": "Vegetarian Burger",
+        "price": 160,
+        "img": ""
+      },
+      {
+        "foodId": 63,
+        "foodItem": "Spicy Chicken Burger",
+        "price": 200,
+        "img": ""
+      },
+      {
+        "foodId": 64,
+        "foodItem": "Mushroom Swiss Burger",
+        "price": 190,
+        "img": ""
+      },
+      {
+        "foodId": 65,
+        "foodItem": "Beyond Meat Burger",
+        "price": 250,
+        "img": ""
+      },
+      {
+        "foodId": 66,
+        "foodItem": "Fish Fillet Burger",
+        "price": 230,
+        "img": ""
+      },
+      {
+        "foodId": 67,
+        "foodItem": "Avocado Ranch Burger",
+        "price": 240,
+        "img": ""
+      },
+      {
+        "foodId": 68,
+        "foodItem": "Double Stack Burger",
+        "price": 280,
+        "img": ""
+      },
+      { "foodId": 69, "foodItem": "Falafel Burger", "price": 200, "img": "" }
+    ]
+  },
+  {
+    "id": 7,
+    "hotelName": "Ice Cream Delight",
+    "location": "Chennai",
+    "placeInChennai": "Besant Nagar",
+    "rating": 4.9,
+    "discount": "30% Off",
+    "minDeliveryOrder": 240,
+    "menu": [
+      { "foodId": 70, "foodItem": "Vanilla Sundae", "price": 120, "img": "" },
+      {
+        "foodId": 71,
+        "foodItem": "Chocolate Fudge Brownie",
+        "price": 180,
+        "img": ""
+      },
+      {
+        "foodId": 72,
+        "foodItem": "Strawberry Cheesecake",
+        "price": 150,
+        "img": ""
+      },
+      {
+        "foodId": 73,
+        "foodItem": "Mint Chocolate Chip",
+        "price": 200,
+        "img": ""
+      },
+      { "foodId": 74, "foodItem": "Caramel Swirl", "price": 160, "img": "" },
+      {
+        "foodId": 75,
+        "foodItem": "Cookies and Cream",
+        "price": 220,
+        "img": ""
+      },
+      {
+        "foodId": 76,
+        "foodItem": "Pistachio Delight",
+        "price": 190,
+        "img": ""
+      },
+      { "foodId": 77, "foodItem": "Coffee Crunch", "price": 210, "img": "" },
+      { "foodId": 78, "foodItem": "Rocky Road", "price": 230, "img": "" },
+      {
+        "foodId": 79,
+        "foodItem": "Matcha Green Tea",
+        "price": 200,
+        "img": ""
+      }
+    ]
+  }
+]
