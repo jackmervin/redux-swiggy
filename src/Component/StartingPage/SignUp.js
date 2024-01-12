@@ -1,47 +1,47 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getLogin, getLoginData, getloginCon } from "../Slice/loginSlice";
-import { getSignUp } from "../Slice/signUpSlice";
-
-function LoginPage() {
-  //Set useState and useDispatch
-  const users = useSelector((state) => state.signUp.users);
-  const loginCon = useSelector((state) => state.login.loginCon);
+import "./SignUp.css";
+import { useDispatch } from "react-redux";
+import { addUsers, getSignUp } from "../../Slice/signUpSlice";
+import { getLogin } from "../../Slice/loginSlice";
+let id = 0;
+function SignPage() {
   const dispatch = useDispatch();
+  const [userdata, setuserdata] = useState({
+    phoneNo: "",
+    name: "",
+    email: "",
+    id: id++,
+  });
 
-  const [phoneNo, setPhoneNo] = useState("");
-  //Handle Component
   const HandleClose = () => {
-    dispatch(getLogin(false));
+    dispatch(getSignUp(false));
   };
-  //Handle both component
+  //
   const handChangPage = () => {
-    dispatch(getLogin(false));
-    dispatch(getSignUp(true));
+    dispatch(getSignUp(false));
+    dispatch(getLogin(true));
   };
   //
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (phoneNo === "") {
-      return alert("enter the phoneNo");
+    if (userdata.phoneNo === "") {
+      return alert("Please enter the phoneNo");
     }
-    if (phoneNo.length !== 10) {
-      return alert("enter valid number");
+    if (userdata.phoneNo.length !== 10) {
+      return alert("Please enter a valid phoneNo");
     }
-    var condi = users.some((user) => {
-      return phoneNo === user.phoneNo;
-    });
-    var logindata = users.filter((user) => {
-      return phoneNo === user.phoneNo;
-    });
-    dispatch(getLoginData(logindata));
-    setPhoneNo("");
-    condi
-      ? alert("login successful")
-      : alert("Login Failed: Your user ID  is incorrect");
-    condi && dispatch(getLogin(false));
-    dispatch(getloginCon(condi));
+    if (userdata.name === "") {
+      return alert("Please enter the Name");
+    }
+    if (userdata.email === "") {
+      return alert("Please enter a valid email");
+    }
+    dispatch(addUsers(userdata));
+    setuserdata({ ...userdata, phoneNo: "", name: "", email: "" });
+    dispatch(getSignUp(false));
+    dispatch(getLogin(true));
   };
+
   return (
     <>
       <div className="singnPage">
@@ -64,13 +64,13 @@ function LoginPage() {
           </svg>
           <div className="nav">
             <div className="navLeft">
-              <div className="navhead">Login</div>
+              <div className="navhead">Sign up</div>
               <div
                 className="navp"
                 style={{ cursor: "pointer" }}
                 onClick={handChangPage}
               >
-                <span style={{ color: "black" }}>or </span>create an account
+                <span style={{ color: "black" }}>or </span>login to your account
               </div>
             </div>
             <div className="navRight">
@@ -89,10 +89,29 @@ function LoginPage() {
             <input
               placeholder="Phone Number"
               type="number"
-              value={phoneNo}
-              onChange={(e) => setPhoneNo(e.target.value)}
+              value={userdata.phoneNo}
+              onChange={(e) =>
+                setuserdata({ ...userdata, phoneNo: e.target.value })
+              }
             />
-            <button type="submit">LOGIN</button>
+            <input
+              placeholder="Name"
+              type="text"
+              value={userdata.name}
+              onChange={(e) =>
+                setuserdata({ ...userdata, name: e.target.value })
+              }
+            />
+            <input
+              placeholder="Email"
+              type="email"
+              value={userdata.email}
+              onChange={(e) =>
+                setuserdata({ ...userdata, email: e.target.value })
+              }
+            />
+            <div>Have a referral code?</div>
+            <button type="submit">SIGN UP</button>
             <p>By creating an account, I accept the Terms & Conditions</p>
           </form>
         </div>
@@ -101,4 +120,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default SignPage;

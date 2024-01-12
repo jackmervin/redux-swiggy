@@ -1,11 +1,11 @@
-import React from "react";
-import headimg from "../img/Lunch1_vlksgq.webp";
+import React, { useState } from "react";
+import headimg from "../../img/Lunch1_vlksgq.webp";
 import "./StartingPage.css";
 import { useDispatch, useSelector } from "react-redux";
-import SignPage from "./SignUp";
-import LoginPage from "./Login";
-import { getLogin } from "../Slice/loginSlice";
-import { getSignUp } from "../Slice/signUpSlice";
+import SignPage from "../StartingPage/SignUp";
+import LoginPage from "../StartingPage/Login";
+import { getLogin } from "../../Slice/loginSlice";
+import { getSignUp } from "../../Slice/signUpSlice";
 import { Link } from "react-router-dom";
 
 function StartingPage() {
@@ -14,6 +14,7 @@ function StartingPage() {
   const loginCon = useSelector((state) => state.login.loginCon);
   const loginData = useSelector((state) => state.login.loginData);
   const dispatch = useDispatch();
+  const [location, setlocation] = useState("");
   //
   const handleLogin = () => {
     dispatch(getLogin(true));
@@ -63,7 +64,11 @@ function StartingPage() {
           </div>
           <div className="findLocation">
             <div className="input">
-              <input placeholder="Enter your delivery location"></input>
+              <input
+                value={location}
+                onChange={(e) => setlocation(e.target.value)}
+                placeholder="Enter your delivery location"
+              ></input>
               <button>
                 <svg
                   className="svg"
@@ -82,7 +87,18 @@ function StartingPage() {
                 Locate Me
               </button>
             </div>
-            <div className="search">Find Food</div>
+            {location.length > 0 ? (
+              <Link to="Home" style={{ textDecorationLine: "none" }}>
+                <div className="search">Find Food</div>
+              </Link>
+            ) : (
+              <div
+                className="search"
+                onClick={() => alert("Enter the location ")}
+              >
+                Find Food
+              </div>
+            )}
           </div>
           <div className="cities">Popular cities in India</div>
           <div className="citie">
