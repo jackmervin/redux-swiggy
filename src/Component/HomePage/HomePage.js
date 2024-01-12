@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./HomePage.css";
 import Carousel from "./SlideOne/Carousel";
+import SlideTwo from "./SlideTwo/SlideTwo";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 function HomePage() {
@@ -129,6 +130,7 @@ function HomePage() {
       </div>
       <div className="mainBody"></div>
       <Carousel />
+      <SlideTwo />
     </>
   );
 }
