@@ -5,6 +5,7 @@ import StartingPage from "./Component/StartingPage/StartingPage";
 import Hotels from "./Hotels.json";
 import HomePage from "./Component/HomePage/HomePage";
 import { HashRouter, Route, Routes } from "react-router-dom";
+import Profile from "./Component/HomePage/Profile/Profile";
 function App() {
   console.log(Hotels);
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<StartingPage />} />
           <Route path="Home" element={<HomePage />} />
+          <Route path="my_account" element={<Profile />} />
         </Routes>
       </HashRouter>
     </Provider>

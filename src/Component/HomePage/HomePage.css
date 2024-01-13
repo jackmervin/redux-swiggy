@@ -42,6 +42,10 @@
 }
 .mainBody {
   margin: auto;
-  padding: 40px 0;
+  padding: 60px 0;
   box-sizing: border-box;
+}
+.hov:hover {
+  color: #fc8019;
+  fill: #fc8019;
 }

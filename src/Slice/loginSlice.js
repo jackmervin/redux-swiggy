@@ -18,8 +18,14 @@ const loginSlice = createSlice({
     getLoginData: (state, actions) => {
       state.loginData = actions.payload;
     },
+    changeDate: (state, actions) => {
+      state.loginData[0].name = actions.payload.name;
+      state.loginData[0].phoneNo = actions.payload.phoneNo;
+      state.loginData[0].email = actions.payload.email;
+    },
   },
 });
 
 export default loginSlice.reducer;
-export const { getLogin, getloginCon, getLoginData } = loginSlice.actions;
+export const { getLogin, getloginCon, getLoginData, changeDate } =
+  loginSlice.actions;

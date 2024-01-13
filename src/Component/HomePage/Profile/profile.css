@@ -1,0 +1,113 @@
+.profilepage {
+  background: #37718e;
+  position: relative;
+}
+.profileHeader {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  column-gap: 30%;
+  position: sticky;
+}
+.profilehead {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.profiledata {
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.profilebtn {
+  border: 1px solid hsla(0, 0%, 100%, 0.6);
+  padding: 12px 20px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin: auto;
+  margin-top: 30px;
+}
+.profilebtn:hover {
+  color: #37718e;
+  background-color: white;
+}
+.profileBody {
+  width: 90%;
+  height: 500px;
+  background-color: white;
+  margin: auto;
+}
+.update {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.leftUpdate {
+  width: calc(100% - 380px);
+  background-color: black;
+  opacity: 0.5;
+}
+.rightUpdate {
+  width: 380px;
+  height: 100%;
+  background-color: white;
+}
+.updatehead {
+  margin-top: 30px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 700;
+  color: #282c3f;
+  line-height: 1.2rem;
+}
+.updateform {
+  width: 300px;
+  margin: auto;
+  margin-top: 30px;
+}
+.updateform label {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #282c3f;
+}
+.updateform input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+  color: #282c3f;
+  width: 95%;
+}
+.updateform div {
+  margin-top: 10px;
+  border-top: solid 1px #a1a3ac;
+}
+.updatebtn {
+  width: 300px;
+  height: 60px;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+  background-color: #fc8019;
+  cursor: pointer;
+}
+.updatebtn:hover {
+  background-color: #f87000;
+}

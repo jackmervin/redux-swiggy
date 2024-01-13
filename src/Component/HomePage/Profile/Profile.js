@@ -1,15 +1,38 @@
-import React from "react";
-import "./HomePage.css";
-import Carousel from "./SlideOne/Carousel";
-import SlideTwo from "./SlideTwo/SlideTwo";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { getSignUp } from "../../Slice/signUpSlice";
+import "./profile.css";
+import { changeDate } from "../../../Slice/loginSlice";
 
-function HomePage() {
+function Profile() {
   const loginData = useSelector((state) => state.login.loginData);
   const loginCon = useSelector((state) => state.login.loginCon);
   const dispatch = useDispatch();
+  const [update, setupdate] = useState(loginData[0]);
+  const [updatecon, setupdatecon] = useState(false);
+
+  const handleUpdate = () => {
+    if (update.phoneNo === "") {
+      return alert("Please enter the phoneNo");
+    }
+    if (update.phoneNo.length !== 10) {
+      return alert("Please enter a valid phoneNo");
+    }
+    if (update.name === "") {
+      return alert("Please enter the Name");
+    }
+    if (update.email === "") {
+      return alert("Please enter a valid email");
+    }
+    setupdate({
+      ...update,
+      name: update.name,
+      phoneNo: update.phoneNo,
+      email: update.email,
+    });
+    dispatch(changeDate(update));
+    setupdatecon(false);
+  };
   return (
     <>
       <div className="nav2">
@@ -46,19 +69,21 @@ function HomePage() {
           <div className="location">Chennai, Tamil Nadu, India</div>
         </div>
         <div className="nav-right">
-          <div className="Search hov">
-            <svg
-              style={{ marginTop: "3px" }}
-              className="_1GTCc "
-              viewBox="5 -1 12 25"
-              height="17"
-              width="17"
-              fill="#686b78"
-            >
-              <path d="M17.6671481,17.1391632 L22.7253317,22.1973467 L20.9226784,24 L15.7041226,18.7814442 C14.1158488,19.8024478 12.225761,20.3946935 10.1973467,20.3946935 C4.56550765,20.3946935 0,15.8291858 0,10.1973467 C0,4.56550765 4.56550765,0 10.1973467,0 C15.8291858,0 20.3946935,4.56550765 20.3946935,10.1973467 C20.3946935,12.8789625 19.3595949,15.3188181 17.6671481,17.1391632 Z M10.1973467,17.8453568 C14.4212261,17.8453568 17.8453568,14.4212261 17.8453568,10.1973467 C17.8453568,5.97346742 14.4212261,2.54933669 10.1973467,2.54933669 C5.97346742,2.54933669 2.54933669,5.97346742 2.54933669,10.1973467 C2.54933669,14.4212261 5.97346742,17.8453568 10.1973467,17.8453568 Z"></path>
-            </svg>
-            &nbsp; Search
-          </div>
+          <Link style={{ textDecorationLine: "none" }} to="/Home">
+            <div className="Search hov">
+              <svg
+                style={{ marginTop: "3px" }}
+                className="_1GTCc "
+                viewBox="5 -1 12 25"
+                height="17"
+                width="17"
+                fill="#686b78"
+              >
+                <path d="M17.6671481,17.1391632 L22.7253317,22.1973467 L20.9226784,24 L15.7041226,18.7814442 C14.1158488,19.8024478 12.225761,20.3946935 10.1973467,20.3946935 C4.56550765,20.3946935 0,15.8291858 0,10.1973467 C0,4.56550765 4.56550765,0 10.1973467,0 C15.8291858,0 20.3946935,4.56550765 20.3946935,10.1973467 C20.3946935,12.8789625 19.3595949,15.3188181 17.6671481,17.1391632 Z M10.1973467,17.8453568 C14.4212261,17.8453568 17.8453568,14.4212261 17.8453568,10.1973467 C17.8453568,5.97346742 14.4212261,2.54933669 10.1973467,2.54933669 C5.97346742,2.54933669 2.54933669,5.97346742 2.54933669,10.1973467 C2.54933669,14.4212261 5.97346742,17.8453568 10.1973467,17.8453568 Z"></path>
+              </svg>
+              &nbsp; Search
+            </div>
+          </Link>
           <div className="offers hov">
             <svg
               className="_1GTCc"
@@ -85,11 +110,7 @@ function HomePage() {
             &nbsp; Help
           </div>
           {!loginCon && (
-            <Link
-              to="/"
-              style={{ textDecorationLine: "none" }}
-              onClick={() => dispatch(getSignUp(true))}
-            >
+            <Link to="/" style={{ textDecorationLine: "none" }}>
               <div className="profile hov">
                 <svg
                   style={{ marginTop: "3px" }}
@@ -137,11 +158,86 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="mainBody"></div>
-      <Carousel />
-      <SlideTwo />
+      {loginCon && (
+        <div className="profilepage">
+          <div className="profileHeader">
+            <div className="profilehead">
+              {loginData[0].name}
+              <div className="profiledata">
+                {loginData[0].phoneNo} &nbsp;. &nbsp;{loginData[0].email}
+              </div>
+            </div>
+            <div className="profilebtn" onClick={() => setupdatecon(true)}>
+              EDIT PROFIL
+            </div>
+          </div>
+          <div className="profileBody"></div>
+        </div>
+      )}
+      {updatecon && (
+        <div className="update">
+          <div className="leftUpdate" onClick={() => setupdatecon(false)}></div>
+          <div className="rightUpdate">
+            <div style={{ display: "flex", marginTop: "10px" }}>
+              <svg
+                onClick={() => setupdatecon(false)}
+                style={{
+                  cursor: "pointer",
+                  marginTop: "30px",
+                  marginLeft: "40px",
+                  marginBottom: "10px",
+                }}
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="17"
+                viewBox="0 0 384 512"
+              >
+                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+              </svg>
+              <div className="updatehead">Edit profile</div>
+            </div>
+            <div className="updateform">
+              <label>Name</label>
+              <br></br>
+              <input
+                type="text"
+                value={update.name}
+                onChange={(e) => setupdate({ ...update, name: e.target.value })}
+              ></input>
+              <div></div>
+            </div>
+            <div className="updateform">
+              <label>Phone number</label>
+              <br></br>
+              <input
+                type="number"
+                value={update.phoneNo}
+                onChange={(e) =>
+                  setupdate({ ...update, phoneNo: e.target.value })
+                }
+              ></input>
+              <div></div>
+            </div>
+            <div className="updateform">
+              <label>Email</label>
+              <br></br>
+              <input
+                type="email"
+                value={update.email}
+                onChange={(e) =>
+                  setupdate({ ...update, email: e.target.value })
+                }
+              ></input>
+              <div></div>
+            </div>
+            <div className="updatebtn" onClick={handleUpdate}>
+              CHANGE
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
 
-export default HomePage;
+export default Profile;

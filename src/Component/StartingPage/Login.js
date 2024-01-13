@@ -6,7 +6,7 @@ import { getSignUp } from "../../Slice/signUpSlice";
 function LoginPage() {
   //Set useState and useDispatch
   const users = useSelector((state) => state.signUp.users);
-  const loginCon = useSelector((state) => state.login.loginCon);
+  // const loginCon = useSelector((state) => state.login.loginCon);
   const dispatch = useDispatch();
 
   const [phoneNo, setPhoneNo] = useState("");
