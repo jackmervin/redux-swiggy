@@ -168,7 +168,7 @@ function Profile() {
               </div>
             </div>
             <div className="profilebtn" onClick={() => setupdatecon(true)}>
-              EDIT PROFIL
+              EDIT PROFILE
             </div>
           </div>
           <div className="profileBody"></div>
