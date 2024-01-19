@@ -170,3 +170,22 @@
 .addbtn:hover {
   box-shadow: 0 2px 8px #a6a7ac;
 }
+.cartBtn {
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0 2px 8px #d4d5d9;
+  width: 80px;
+  margin: auto;
+  position: absolute;
+  bottom: -5px;
+  left: 15px;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 5px;
+  font-weight: 500;
+}
+.add,
+.cartval {
+  color: #60b246;
+}

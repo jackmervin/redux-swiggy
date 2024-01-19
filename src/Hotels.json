@@ -13,61 +13,71 @@
         "foodId": 0,
         "foodItem": "Chicken Biryani",
         "price": 250,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gatkkbnqizbhy8zsjahg"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gatkkbnqizbhy8zsjahg",
+        "quantity": 0
       },
       {
         "foodId": 1,
         "foodItem": "Paneer Tikka",
         "price": 180,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/kw2mx5muh3d3jjtytgew"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/kw2mx5muh3d3jjtytgew",
+        "quantity": 0
       },
       {
         "foodId": 2,
         "foodItem": "Vegetable Fried Rice",
         "price": 150,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/6491f5d66096cc600a6c72e29a50bf0c"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/6491f5d66096cc600a6c72e29a50bf0c",
+        "quantity": 0
       },
       {
         "foodId": 3,
         "foodItem": "Butter Chicken",
         "price": 280,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/46e2cf60be24199a44575343932950e3"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/46e2cf60be24199a44575343932950e3",
+        "quantity": 0
       },
       {
         "foodId": 4,
         "foodItem": "Dal Makhani",
         "price": 200,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/skm6dgqgjbt7zijstfrf"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/skm6dgqgjbt7zijstfrf",
+        "quantity": 0
       },
       {
         "foodId": 5,
         "foodItem": "Gulab Jamun",
         "price": 80,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/hnwsgoyobduilpiml7kc"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/hnwsgoyobduilpiml7kc",
+        "quantity": 0
       },
       {
         "foodId": 6,
         "foodItem": "Chicken Manchurian",
         "price": 220,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gx3czvk2rtr1ikzacdiu"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gx3czvk2rtr1ikzacdiu",
+        "quantity": 0
       },
       {
         "foodId": 7,
         "foodItem": "Palak Paneer",
         "price": 190,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/5f9afc24ef3c80eaecb8ff340054af88"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/5f9afc24ef3c80eaecb8ff340054af88",
+        "quantity": 0
       },
       {
         "foodId": 8,
         "foodItem": "Veg Biryani",
         "price": 180,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d2udskczd903iaeerylt"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d2udskczd903iaeerylt",
+        "quantity": 0
       },
       {
         "foodId": 9,
         "foodItem": "Chocolate Brownie",
         "price": 100,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/fbdd1c130e161c444dfe83895157bd5e"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/fbdd1c130e161c444dfe83895157bd5e",
+        "quantity": 0
       }
     ]
   },
@@ -82,64 +92,74 @@
     "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/89fccaa76f2f760e2742b9e53d32bb69",
     "menu": [
       {
-        "foodId": 10,
+        "foodId": 0,
         "foodItem": "Chicken Korma",
         "price": 260,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f4e3d5969278798d88d737434c06f960"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f4e3d5969278798d88d737434c06f960",
+        "quantity": 0
       },
       {
-        "foodId": 11,
+        "foodId": 1,
         "foodItem": "Fish Curry",
         "price": 300,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/jmwopoqcpf5pz5nlojnc"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/jmwopoqcpf5pz5nlojnc",
+        "quantity": 0
       },
       {
-        "foodId": 12,
+        "foodId": 2,
         "foodItem": "Chilli Gobi",
         "price": 180,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/0bafcc5396e6164d5cbe3c647b8c7914"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/0bafcc5396e6164d5cbe3c647b8c7914",
+        "quantity": 0
       },
       {
-        "foodId": 13,
+        "foodId": 3,
         "foodItem": "Paneer Butter Masala",
         "price": 220,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/218de805598ba3a5b82319d63b0dd943"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/218de805598ba3a5b82319d63b0dd943",
+        "quantity": 0
       },
       {
-        "foodId": 14,
+        "foodId": 4,
         "foodItem": "Aloo Paratha",
         "price": 120,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/59b2c4bbeefcff9d5b3de76cb67bca94"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/59b2c4bbeefcff9d5b3de76cb67bca94",
+        "quantity": 0
       },
       {
-        "foodId": 15,
+        "foodId": 5,
         "foodItem": "Rasam",
         "price": 90,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/wcy2yndy9ohwu6dzifnm"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/wcy2yndy9ohwu6dzifnm",
+        "quantity": 0
       },
       {
-        "foodId": 16,
+        "foodId": 6,
         "foodItem": "Veg Hakka Noodles",
         "price": 160,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/ymzimrm9udbtiyzsavxu"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/ymzimrm9udbtiyzsavxu",
+        "quantity": 0
       },
       {
-        "foodId": 17,
+        "foodId": 7,
         "foodItem": "Chicken 65",
         "price": 240,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/xia7sruuwkjr7hkc1vvf"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/xia7sruuwkjr7hkc1vvf",
+        "quantity": 0
       },
       {
-        "foodId": 18,
+        "foodId": 8,
         "foodItem": "Prawn Biryani",
         "price": 320,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/q2fwl6aqqppoliadovgd"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/q2fwl6aqqppoliadovgd",
+        "quantity": 0
       },
       {
-        "foodId": 19,
+        "foodId": 9,
         "foodItem": "Fruit Salad",
         "price": 100,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/4a7c7ba6fda5539b028bed903045f60f"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/4a7c7ba6fda5539b028bed903045f60f",
+        "quantity": 0
       }
     ]
   },
@@ -154,64 +174,74 @@
     "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/6e04be27387483a7c00444f8e8241108",
     "menu": [
       {
-        "foodId": 20,
+        "foodId": 0,
         "foodItem": "Schezwan Fried Rice",
         "price": 180,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/e08f489bcb28a7c3e7f076cca29989b4"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/e08f489bcb28a7c3e7f076cca29989b4",
+        "quantity": 0
       },
       {
-        "foodId": 21,
+        "foodId": 1,
         "foodItem": "Chicken Satay",
         "price": 220,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/byx61q2unmkn8tnmoksc"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/byx61q2unmkn8tnmoksc",
+        "quantity": 0
       },
       {
-        "foodId": 22,
+        "foodId": 2,
         "foodItem": "Vegetable Spring Rolls",
         "price": 150,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/2e3cda00dd5d8d898ab7f136258c58eb"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/2e3cda00dd5d8d898ab7f136258c58eb",
+        "quantity": 0
       },
       {
-        "foodId": 23,
+        "foodId": 3,
         "foodItem": "Shrimp Pad Thai",
         "price": 280,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/88dd94c88b9d76c0654231b1f93471cf"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/88dd94c88b9d76c0654231b1f93471cf",
+        "quantity": 0
       },
       {
-        "foodId": 24,
+        "foodId": 4,
         "foodItem": "Thai Green Curry",
         "price": 200,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/c02d0939276f5f203e7ce9748232d314"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/c02d0939276f5f203e7ce9748232d314",
+        "quantity": 0
       },
       {
-        "foodId": 25,
+        "foodId": 5,
         "foodItem": "Mango Sticky Rice",
         "price": 120,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/b328d7f682a1727082686658b803de63"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/b328d7f682a1727082686658b803de63",
+        "quantity": 0
       },
       {
-        "foodId": 26,
+        "foodId": 6,
         "foodItem": "Teriyaki Chicken",
         "price": 240,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ucbrnmjeudf5lkf21fvi"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ucbrnmjeudf5lkf21fvi",
+        "quantity": 0
       },
       {
-        "foodId": 27,
+        "foodId": 7,
         "foodItem": "Vegetable Dim Sum",
         "price": 190,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/iuuc9ijjapljwojifixk"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/iuuc9ijjapljwojifixk",
+        "quantity": 0
       },
       {
-        "foodId": 28,
+        "foodId": 8,
         "foodItem": "Kung Pao Tofu",
         "price": 160,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/zaxxl0zhdhj1zoramukk"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/zaxxl0zhdhj1zoramukk",
+        "quantity": 0
       },
       {
-        "foodId": 29,
+        "foodId": 9,
         "foodItem": "Matcha Ice Cream",
         "price": 80,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/9f14af981799600e6e523e5c0549c16a"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/9f14af981799600e6e523e5c0549c16a",
+        "quantity": 0
       }
     ]
   },
@@ -226,64 +256,74 @@
     "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/oodghmivnc6bxnbrvzzw",
     "menu": [
       {
-        "foodId": 30,
+        "foodId": 0,
         "foodItem": "Quinoa Salad",
         "price": 120,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f673ef28a72bb7e1ec57f3f00703e630"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f673ef28a72bb7e1ec57f3f00703e630",
+        "quantity": 0
       },
       {
-        "foodId": 31,
+        "foodId": 1,
         "foodItem": "Grilled Salmon",
         "price": 300,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/4963e612cda44931615c9224f4465f58"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/4963e612cda44931615c9224f4465f58",
+        "quantity": 0
       },
       {
-        "foodId": 32,
+        "foodId": 2,
         "foodItem": "Avocado Toast",
         "price": 180,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d6118cc84c55fec2c65f7e1b84a72045"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d6118cc84c55fec2c65f7e1b84a72045",
+        "quantity": 0
       },
       {
-        "foodId": 33,
+        "foodId": 3,
         "foodItem": "Kale Smoothie",
         "price": 90,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/r6fxamsty79urx1hr9zw"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/r6fxamsty79urx1hr9zw",
+        "quantity": 0
       },
       {
-        "foodId": 34,
+        "foodId": 4,
         "foodItem": "Chia Pudding",
         "price": 100,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/559911adba69a1531a69c95bd8cc3f2f"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/559911adba69a1531a69c95bd8cc3f2f",
+        "quantity": 0
       },
       {
-        "foodId": 35,
+        "foodId": 5,
         "foodItem": "Vegan Pizza",
         "price": 220,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/37d5b27c4e9c12cd033c46c341aae3fc"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/37d5b27c4e9c12cd033c46c341aae3fc",
+        "quantity": 0
       },
       {
-        "foodId": 36,
+        "foodId": 6,
         "foodItem": "Sweet Potato Fries",
         "price": 150,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/iju5hxyrvgwtnwrx3csm"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/iju5hxyrvgwtnwrx3csm",
+        "quantity": 0
       },
       {
-        "foodId": 37,
+        "foodId": 7,
         "foodItem": "Acai Bowl",
         "price": 160,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/n4ry9mep4uisjri10uqp"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/n4ry9mep4uisjri10uqp",
+        "quantity": 0
       },
       {
-        "foodId": 38,
+        "foodId": 8,
         "foodItem": "Detox Juice",
         "price": 70,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/upqs683jv8ejk9vwdvlf"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/upqs683jv8ejk9vwdvlf",
+        "quantity": 0
       },
       {
-        "foodId": 39,
+        "foodId": 9,
         "foodItem": "Quinoa Bowl",
         "price": 200,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3ba7b01d95dc608ea4d7a144cbc50e2a"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3ba7b01d95dc608ea4d7a144cbc50e2a",
+        "quantity": 0
       }
     ]
   },
@@ -298,64 +338,74 @@
     "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/drhqc7ptipun2utfohdo",
     "menu": [
       {
-        "foodId": 40,
+        "foodId": 0,
         "foodItem": "Masala Dosa",
         "price": 120,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dd1e530d00f9ef0fb1f8632745af49a6"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dd1e530d00f9ef0fb1f8632745af49a6",
+        "quantity": 0
       },
       {
-        "foodId": 41,
+        "foodId": 1,
         "foodItem": "Idli Sambar",
         "price": 100,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ee0e4ffb72c26dcbbf036ca46975d4b5"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ee0e4ffb72c26dcbbf036ca46975d4b5",
+        "quantity": 0
       },
       {
-        "foodId": 42,
+        "foodId": 2,
         "foodItem": "Plain Uttapam",
         "price": 150,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rlho2z8sgzomzzh1gqjk"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rlho2z8sgzomzzh1gqjk",
+        "quantity": 0
       },
       {
-        "foodId": 43,
+        "foodId": 3,
         "foodItem": "Rava Kesari",
         "price": 80,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/a4306658d50072933cbcef5eecd72038"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/a4306658d50072933cbcef5eecd72038",
+        "quantity": 0
       },
       {
-        "foodId": 44,
+        "foodId": 4,
         "foodItem": "Filter Coffee",
         "price": 50,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/guptrectluyll9f7fnoy"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/guptrectluyll9f7fnoy",
+        "quantity": 0
       },
       {
-        "foodId": 45,
+        "foodId": 5,
         "foodItem": "Mysore Pak",
         "price": 90,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/af0ce6e54fd9bf7c909dfcf86ca7c94b"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/af0ce6e54fd9bf7c909dfcf86ca7c94b",
+        "quantity": 0
       },
       {
-        "foodId": 46,
+        "foodId": 6,
         "foodItem": "Onion Rava Dosa",
         "price": 130,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f56e3646a295e150382f04a4d60dfdb7"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f56e3646a295e150382f04a4d60dfdb7",
+        "quantity": 0
       },
       {
-        "foodId": 47,
+        "foodId": 7,
         "foodItem": "Coconut Chutney",
         "price": 60,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/z7s36bosnoc95umhppbz"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/z7s36bosnoc95umhppbz",
+        "quantity": 0
       },
       {
-        "foodId": 48,
+        "foodId": 8,
         "foodItem": "Pongal",
         "price": 110,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/4a5ef69c48d874eed453d247e9369366"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/4a5ef69c48d874eed453d247e9369366",
+        "quantity": 0
       },
       {
-        "foodId": 49,
+        "foodId": 9,
         "foodItem": "Jigarthanda",
         "price": 70,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/9b4c5cef6928238b9d67bf4ee5bdf8a6"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/9b4c5cef6928238b9d67bf4ee5bdf8a6",
+        "quantity": 0
       }
     ]
   },
@@ -370,64 +420,74 @@
     "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7",
     "menu": [
       {
-        "foodId": 50,
+        "foodId": 0,
         "foodItem": "Margherita Pizza",
         "price": 200,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/1c56eff5bf872cd8921feee41a48b151"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/1c56eff5bf872cd8921feee41a48b151",
+        "quantity": 0
       },
       {
-        "foodId": 51,
+        "foodId": 1,
         "foodItem": "Pepperoni Pizza",
         "price": 250,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/9d17812d124cb1840b0ee33aa6dc718c"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/9d17812d124cb1840b0ee33aa6dc718c",
+        "quantity": 0
       },
       {
-        "foodId": 52,
+        "foodId": 2,
         "foodItem": "Vegetarian Supreme",
         "price": 220,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/c9mdjcfkfxgizuilujmg"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/c9mdjcfkfxgizuilujmg",
+        "quantity": 0
       },
       {
-        "foodId": 53,
+        "foodId": 3,
         "foodItem": "BBQ Chicken Pizza",
         "price": 280,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/9f600aaaf5e62aaf3896730f9917bba5"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/9f600aaaf5e62aaf3896730f9917bba5",
+        "quantity": 0
       },
       {
-        "foodId": 54,
+        "foodId": 4,
         "foodItem": "Hawaiian Pizza",
         "price": 230,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/07bcf6282b0b1dcf2ae2cdf41dfe980c"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/07bcf6282b0b1dcf2ae2cdf41dfe980c",
+        "quantity": 0
       },
       {
-        "foodId": 55,
+        "foodId": 5,
         "foodItem": "Mushroom Delight",
         "price": 190,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/yvrfxxxpycowvgxvjw6i"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/yvrfxxxpycowvgxvjw6i",
+        "quantity": 0
       },
       {
-        "foodId": 56,
+        "foodId": 6,
         "foodItem": "Pesto Lovers",
         "price": 240,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/0acc18f0b857e8b1b4e6c9ddea037e99"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/0acc18f0b857e8b1b4e6c9ddea037e99",
+        "quantity": 0
       },
       {
-        "foodId": 57,
+        "foodId": 7,
         "foodItem": "Spinach and Feta",
         "price": 210,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/s8iagrxdqxmv3l2phgxe"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/s8iagrxdqxmv3l2phgxe",
+        "quantity": 0
       },
       {
-        "foodId": 58,
+        "foodId": 8,
         "foodItem": "Meat Feast",
         "price": 270,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/6c28b17fe282575fc0890018d982cd0a"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/6c28b17fe282575fc0890018d982cd0a",
+        "quantity": 0
       },
       {
-        "foodId": 59,
+        "foodId": 9,
         "foodItem": "Vegan Pizza",
         "price": 200,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/b39e4312ae2e9f65c3b58faaed83f488"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/b39e4312ae2e9f65c3b58faaed83f488",
+        "quantity": 0
       }
     ]
   },
@@ -442,64 +502,74 @@
     "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf",
     "menu": [
       {
-        "foodId": 60,
+        "foodId": 0,
         "foodItem": "Classic Cheeseburger",
         "price": 180,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d5bc5b32dd177f5f207cad66556a572b"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d5bc5b32dd177f5f207cad66556a572b",
+        "quantity": 0
       },
       {
-        "foodId": 61,
+        "foodId": 1,
         "foodItem": "Bacon BBQ Burger",
         "price": 220,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/e80844858dc407d82a8d4d0827371e53"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/e80844858dc407d82a8d4d0827371e53",
+        "quantity": 0
       },
       {
-        "foodId": 62,
+        "foodId": 2,
         "foodItem": "Vegetarian Burger",
         "price": 160,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/c6b0292a2a10010d7a6e2efc15cff053"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/c6b0292a2a10010d7a6e2efc15cff053",
+        "quantity": 0
       },
       {
-        "foodId": 63,
+        "foodId": 3,
         "foodItem": "Spicy Chicken Burger",
         "price": 200,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/b4b1feee9e46efff3f48e9f4a5fd1f86"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/b4b1feee9e46efff3f48e9f4a5fd1f86",
+        "quantity": 0
       },
       {
-        "foodId": 64,
+        "foodId": 4,
         "foodItem": "Mushroom Swiss Burger",
         "price": 190,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/h63hmpqdrnz11uyey3cl"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/h63hmpqdrnz11uyey3cl",
+        "quantity": 0
       },
       {
-        "foodId": 65,
+        "foodId": 5,
         "foodItem": "Beyond Meat Burger",
         "price": 250,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/4ca510e868939f09f55b662ca2eec72b"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/4ca510e868939f09f55b662ca2eec72b",
+        "quantity": 0
       },
       {
-        "foodId": 66,
+        "foodId": 6,
         "foodItem": "Fish Fillet Burger",
         "price": 230,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/8ed2892002efc4fb38f03c4ed76f5930"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/8ed2892002efc4fb38f03c4ed76f5930",
+        "quantity": 0
       },
       {
-        "foodId": 67,
+        "foodId": 7,
         "foodItem": "Avocado Ranch Burger",
         "price": 240,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/aftbmqo45aehyxaoauso"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/aftbmqo45aehyxaoauso",
+        "quantity": 0
       },
       {
-        "foodId": 68,
+        "foodId": 8,
         "foodItem": "Double Stack Burger",
         "price": 280,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/7d5ae1bc8eb867691526c759f698be6a"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/7d5ae1bc8eb867691526c759f698be6a",
+        "quantity": 0
       },
       {
-        "foodId": 69,
+        "foodId": 9,
         "foodItem": "Falafel Burger",
         "price": 200,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/e29a6904ce1cfb9edbfad9fcdb5d67af"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/e29a6904ce1cfb9edbfad9fcdb5d67af",
+        "quantity": 0
       }
     ]
   },
@@ -514,64 +584,74 @@
     "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e6af7ef8b8ad04f12d748f144b602c0f",
     "menu": [
       {
-        "foodId": 70,
+        "foodId": 0,
         "foodItem": "Vanilla Sundae",
         "price": 120,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/0086005045e6f489ac0b2a5f983f17bf"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/0086005045e6f489ac0b2a5f983f17bf",
+        "quantity": 0
       },
       {
-        "foodId": 71,
+        "foodId": 1,
         "foodItem": "Chocolate Fudge Brownie",
         "price": 180,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/no6ooh5j0hipcqvocmhw"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/no6ooh5j0hipcqvocmhw",
+        "quantity": 0
       },
       {
-        "foodId": 72,
+        "foodId": 2,
         "foodItem": "Strawberry Cheesecake",
         "price": 150,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/b301d041ffc8de5e1596861ef9a28aeb"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/b301d041ffc8de5e1596861ef9a28aeb",
+        "quantity": 0
       },
       {
-        "foodId": 73,
+        "foodId": 3,
         "foodItem": "Mint Chocolate Chip",
         "price": 200,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/yhqex1cs1ca32fyko74o"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/yhqex1cs1ca32fyko74o",
+        "quantity": 0
       },
       {
-        "foodId": 74,
+        "foodId": 4,
         "foodItem": "Caramel Swirl",
         "price": 160,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/11e54247644fe401b645ac6af1ff1faa"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/11e54247644fe401b645ac6af1ff1faa",
+        "quantity": 0
       },
       {
-        "foodId": 75,
+        "foodId": 5,
         "foodItem": "Cookies and Cream",
         "price": 220,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/7edae6515719dc48ca7e4e28a5c030a3"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/7edae6515719dc48ca7e4e28a5c030a3",
+        "quantity": 0
       },
       {
-        "foodId": 76,
+        "foodId": 6,
         "foodItem": "Pistachio Delight",
         "price": 190,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/cafcee2260f71031426970b132354711"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/cafcee2260f71031426970b132354711",
+        "quantity": 0
       },
       {
-        "foodId": 77,
+        "foodId": 7,
         "foodItem": "Coffee Crunch",
         "price": 210,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/jmrefzca1rvtkicwi1st"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/jmrefzca1rvtkicwi1st",
+        "quantity": 0
       },
       {
-        "foodId": 78,
+        "foodId": 8,
         "foodItem": "Rocky Road",
         "price": 230,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/32e9fd54fb72f021de4ff143fbf825fc"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/32e9fd54fb72f021de4ff143fbf825fc",
+        "quantity": 0
       },
       {
-        "foodId": 79,
+        "foodId": 9,
         "foodItem": "Matcha Green Tea",
         "price": 200,
-        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ad243ea043325f2565f151fba8c8e758"
+        "img": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ad243ea043325f2565f151fba8c8e758",
+        "quantity": 0
       }
     ]
   }

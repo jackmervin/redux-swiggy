@@ -6,6 +6,7 @@ import Hotels from "./Hotels.json";
 import HomePage from "./Component/HomePage/HomePage";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Profile from "./Component/HomePage/Profile/Profile";
+import Cart from "./Component/HomePage/Cart/Cart";
 function App() {
   console.log(Hotels);
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" exact element={<StartingPage />} />
           <Route path="Home" element={<HomePage />} />
           <Route path="my_account" element={<Profile />} />
+          <Route path="Cart" element={<Cart />} />
         </Routes>
       </HashRouter>
     </Provider>
