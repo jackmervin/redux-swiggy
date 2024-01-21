@@ -49,3 +49,20 @@
   color: #fc8019;
   fill: #fc8019;
 }
+.Cart {
+  position: relative;
+  top: 0;
+}
+.cartqu {
+  position: absolute;
+  top: -8px;
+  left: 2px;
+  color: #fc8019;
+  width: 15px;
+  height: 15px;
+  /* background-color: #fc8019; */
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-align: center;
+}

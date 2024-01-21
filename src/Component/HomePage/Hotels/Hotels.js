@@ -9,12 +9,19 @@ import {
   hotelUpdate,
 } from "../../../Slice/homePageSlice";
 import { useDispatch, useSelector } from "react-redux";
+import {
+  addcartval,
+  cartvaluecon,
+  getCartqun,
+  mincartval,
+} from "../../../Slice/cartPageSlice";
 
 function Hotels() {
   const dispatch = useDispatch();
   const hoteldates = useSelector((state) => state.homepage.hoteldates);
   const hotelcon = useSelector((state) => state.homepage.hotelcon);
   const addbtn = useSelector((state) => state.homepage.addbtn);
+  const cartqun = useSelector((state) => state.cartPage.cartqun);
   //
   const [addbtnid, setaddbtnid] = useState([]);
 
@@ -27,6 +34,8 @@ function Hotels() {
     dispatch(hoteldatescon(true));
   };
   // console.log(hoteldates);
+  //addCart Value
+  console.log(cartqun);
 
   return (
     <>
@@ -220,12 +229,15 @@ function Hotels() {
                   {addbtn === food.foodId ||
                   addbtnid.some((id) => {
                     return id === food.foodId;
-                  }) ? (
+                  }) ||
+                  food.quantity > 0 ? (
                     <div className="cartBtn">
                       <div
                         className="min"
                         id={food.foodId}
                         onClick={(e) => {
+                          cartqun === 0 && dispatch(getCartqun(""));
+
                           if (food.quantity > 0) {
                             // food.quantity === 1 &&();
                             const a = data.menu.map((i) => {
@@ -242,6 +254,7 @@ function Hotels() {
                               return null;
                             });
                             dispatch(hotelUpdate(a[food.foodId]));
+                            dispatch(mincartval());
                           }
                         }}
                       >
@@ -265,6 +278,15 @@ function Hotels() {
                             return null;
                           });
                           dispatch(hotelUpdate(a[food.foodId]));
+                          const b = hoteldates[0].menu.map((arr) => {
+                            const value = arr.quantity;
+                            return value;
+                          });
+                          const v = b.reduce((total, curent) => {
+                            return total + curent;
+                          });
+                          dispatch(getCartqun(v));
+                          dispatch(addcartval());
                         }}
                       >
                         +
@@ -277,6 +299,7 @@ function Hotels() {
                         className="addbtn"
                         onClick={(e) => {
                           dispatch(hotelAdd(food.foodId));
+                          dispatch(cartvaluecon(true));
                           food.foodId >= 0 &&
                             setaddbtnid(() => {
                               return [...addbtnid, food.foodId];
@@ -294,11 +317,42 @@ function Hotels() {
                             return null;
                           });
                           dispatch(hotelUpdate(a[food.foodId]));
+                          dispatch(addcartval());
                         }}
                       >
                         ADD
                       </div>
                     )
+                  )}
+                  {food.quantity === 0 && (
+                    <div
+                      id={food.foodId}
+                      className="addbtn"
+                      onClick={(e) => {
+                        dispatch(hotelAdd(food.foodId));
+                        dispatch(cartvaluecon(true));
+                        food.foodId >= 0 &&
+                          setaddbtnid(() => {
+                            return [...addbtnid, food.foodId];
+                          });
+                        var a = data.menu.map((i) => {
+                          if (Number(e.target.id) === i.foodId) {
+                            return ([...data.menu][e.target.id] = {
+                              foodId: food.foodId,
+                              foodItem: food.foodItem,
+                              price: food.price,
+                              img: food.img,
+                              quantity: food.quantity + 1,
+                            });
+                          }
+                          return null;
+                        });
+                        dispatch(hotelUpdate(a[food.foodId]));
+                        dispatch(addcartval());
+                      }}
+                    >
+                      ADD
+                    </div>
                   )}
                 </div>
               </div>

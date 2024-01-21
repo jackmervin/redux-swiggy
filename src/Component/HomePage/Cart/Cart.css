@@ -1,0 +1,184 @@
+.nocart {
+  margin-top: 180px;
+  text-align: center;
+}
+.nocartimg {
+  margin-right: 15px;
+}
+.nocartheda {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #535665;
+}
+.nocartp {
+  margin-top: 8px;
+  color: #7e808c;
+}
+.nocartbtn {
+  margin: auto;
+  margin-top: 30px;
+  padding: 15px 20px;
+  background-color: #fc8019;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  width: 200px;
+  border: none;
+}
+.cart {
+  background-color: #e9ecee;
+  height: 100%;
+  display: flex;
+  /* margin-bottom: 50px; */
+  margin-top: 80px;
+  justify-content: center;
+  column-gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+.cartaddres {
+  padding: 35px 40px 39px;
+  width: 680px;
+  height: 300px;
+  background-color: white;
+}
+.cartbilling {
+  width: 350px;
+  min-height: 100%;
+  background-color: white;
+  padding: 20px 0px 20px 30px;
+  position: relative;
+}
+.cartpay {
+  padding: 35px 40px 39px;
+  width: 680px;
+  height: 30px;
+  background-color: white;
+}
+.carthotelhead {
+  display: flex;
+  column-gap: 20px;
+  position: sticky;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 40px -20px rgba(100, 91, 91, 0.15);
+}
+.carthotrlimg,
+.carthotrlimg img {
+  width: 50px;
+  height: 50px;
+}
+.carthotelditails {
+}
+.cartheadname {
+  font-size: 17px;
+  color: #282c3f;
+  font-weight: 500;
+}
+.cartheadlocation {
+  font-size: 13px;
+  color: #686b78;
+  margin-bottom: 8px;
+}
+.cartborder {
+  background: #282c3f;
+  width: 40px;
+  height: 2px;
+}
+.cartbillingditails {
+  width: 350px;
+  height: 370px;
+  position: relative;
+  top: 0;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 15px 0px;
+  box-sizing: border-box;
+}
+.scroll {
+  /* height: 800px; */
+}
+.cartfood {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+.cartsvg {
+  width: 15px;
+  height: 15px;
+  fill: #fc8019;
+  margin: auto 0;
+}
+.cartfoodname {
+  font-size: 14px;
+  font-weight: 400;
+  color: #282c3f;
+  width: 180px;
+}
+.cartprice {
+  font-size: 14px;
+  color: #535665;
+  margin: auto 0;
+  margin-right: 15px;
+}
+.suggestinos {
+  background: #f9f9f9;
+  width: 300px;
+  height: 60px;
+  margin-top: 25px;
+  padding-left: 20px;
+}
+.suggestinos input {
+  padding: 22px;
+  padding-left: 5px;
+  background: #f9f9f9;
+  outline: none;
+  border: none;
+  color: #3d4152;
+  font-weight: 400;
+  font-size: 14px;
+  width: 260px;
+}
+.checkbox {
+  margin-top: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 320px;
+  display: flex;
+  column-gap: 10px;
+  border: 1px solid #a9abb2;
+}
+.checkbox input {
+  height: 20px;
+  cursor: pointer;
+}
+.coupon {
+  border: 1px dashed #a9abb2;
+  color: #535665;
+  width: 320px;
+  font-size: 14px;
+  padding: 15px 50px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.checkbox:hover,
+.suggestinos:hover,
+.coupon:hover {
+  box-shadow: 0 3px 8px #d3d3d3;
+}
+.bill {
+  font-size: 13px;
+  color: #686b78;
+}
+.billname {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #282c3f;
+}

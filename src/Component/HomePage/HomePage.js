@@ -7,12 +7,20 @@ import { Link } from "react-router-dom";
 import { getSignUp } from "../../Slice/signUpSlice";
 import Hotels from "./Hotels/Hotels";
 import { hodeldatesDelete, hoteldatescon } from "../../Slice/homePageSlice";
+import {
+  addcartval,
+  cartvaluecon,
+  getCartqun,
+} from "../../Slice/cartPageSlice";
 
 function HomePage() {
   const loginData = useSelector((state) => state.login.loginData);
   const loginCon = useSelector((state) => state.login.loginCon);
   const hotelcon = useSelector((state) => state.homepage.hotelcon);
+  const cartCon = useSelector((state) => state.cartPage.cartCon);
+  const cartqun = useSelector((state) => state.cartPage.cartqun);
   const dispatch = useDispatch();
+
   return (
     <>
       <div className="nav2">
@@ -21,6 +29,8 @@ function HomePage() {
             onClick={() => {
               dispatch(hoteldatescon(false));
               dispatch(hodeldatesDelete());
+              dispatch(cartvaluecon(false));
+              dispatch(getCartqun(""));
             }}
             className="logo1"
             style={{ cursor: "pointer" }}
@@ -140,6 +150,12 @@ function HomePage() {
           )}
           <Link style={{ textDecorationLine: "none" }} to="/Cart">
             <div className="Cart hov">
+              {/* {cartCon || cartqun > 0 ? (
+                <div className="cartqu">{cartqun}</div>
+              ) : (
+                <div className="cartqu"></div>
+              )} */}
+              {cartqun > 0 && <div className="cartqu">{cartqun}</div>}
               <svg
                 style={{ marginTop: "6px" }}
                 xmlns="http://www.w3.org/2000/svg"
