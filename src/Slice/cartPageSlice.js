@@ -5,6 +5,7 @@ const initialState = {
   cartCon: false,
   cartData: [],
   cartAddal: 1,
+  addNewadd: false,
 };
 const cartPageSlice = createSlice({
   name: "cartPage",
@@ -22,9 +23,17 @@ const cartPageSlice = createSlice({
     cartvaluecon: (state, actions) => {
       state.cartCon = actions.payload;
     },
+    cartaddNewAdd: (state, actions) => {
+      state.addNewadd = actions.payload;
+    },
   },
 });
 
 export default cartPageSlice.reducer;
-export const { cartvaluecon, getCartqun, addcartval, mincartval } =
-  cartPageSlice.actions;
+export const {
+  cartaddNewAdd,
+  cartvaluecon,
+  getCartqun,
+  addcartval,
+  mincartval,
+} = cartPageSlice.actions;

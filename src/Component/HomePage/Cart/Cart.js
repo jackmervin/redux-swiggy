@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Cart.css";
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getSignUp } from "../../../Slice/signUpSlice";
 import cart from "../../../img/cart.png";
@@ -8,17 +8,30 @@ import {
   addcartval,
   getCartqun,
   mincartval,
+  cartaddNewAdd,
 } from "../../../Slice/cartPageSlice";
 import { hotelUpdate } from "../../../Slice/homePageSlice";
-
 function Cart() {
   const loginData = useSelector((state) => state.login.loginData);
   const loginCon = useSelector((state) => state.login.loginCon);
   // const cartCon = useSelector((state) => state.cartPage.cartD);
   const cartqun = useSelector((state) => state.cartPage.cartqun);
+  const addNewadd = useSelector((state) => state.cartPage.addNewadd);
   const hoteldates = useSelector((state) => state.homepage.hoteldates);
   const dispatch = useDispatch();
-
+  //
+  const [address, setaddress] = useState({
+    flat: "Ramya pg",
+    houseNo: "F1",
+    landmark: " Thirumalai Nagar Annexe",
+    city: "Perungud",
+    pincode: "613006",
+  });
+  const [flat, setflate] = useState("");
+  const [houseNo, sethouseNo] = useState("");
+  const [landmark, setlandmark] = useState("");
+  const [city, setcity] = useState("");
+  const [pincode, setpincode] = useState("");
   const getprice =
     cartqun > 0 &&
     hoteldates[0].menu.map((data) => {
@@ -34,8 +47,8 @@ function Cart() {
     });
   const totalamount = useMemo(() => {
     return totald;
-  }, [hoteldates]);
-  console.log(totalamount);
+  }, [totald]);
+
   return (
     <>
       <div className="nav2">
@@ -221,7 +234,43 @@ function Cart() {
                 gap: "30px",
               }}
             >
-              <div className="cartaddres"></div>
+              <div className="cartaddres">
+                <div className="addresshead">Select delivery address</div>
+                <div className="addressp">
+                  You have a saved address in this location
+                </div>
+                <div className="addresscontainer">
+                  <div className="oldaddress">
+                    <div className="addressName">{address.flat}</div>
+                    <div className="fulladdress">
+                      Entrance: Front gate, Floor: 1, Block or Tower:
+                      {address.flat}, Flat Number:{address.houseNo},
+                      {address.landmark},{address.city},{address.pincose}
+                    </div>
+                    <div className="addressmin">60 MINS</div>
+                    <div className="deliverhere">Deliver Here</div>
+                  </div>
+                  <div className="newaddress">
+                    <div className="addressName">Add New Address</div>
+                    <div className="fulladdress">
+                      <div
+                        className="fulladdress"
+                        style={{ lineHeight: "10px" }}
+                      >
+                        Chennai, Tamil Nadu, India
+                      </div>
+                    </div>{" "}
+                    <div
+                      className="addnew"
+                      onClick={() => {
+                        dispatch(cartaddNewAdd(true));
+                      }}
+                    >
+                      ADD NEW
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="cartpay"></div>
             </div>
             <div className="cartbilling">
@@ -447,6 +496,113 @@ function Cart() {
             </div>
           </div>
         ))}
+
+      {addNewadd && (
+        <div className="addnewaddress">
+          <div className="addnewleft">
+            <div style={{ display: "flex" }}>
+              <svg
+                style={{
+                  cursor: "pointer",
+                  marginTop: "30px",
+                  marginLeft: "40px",
+                  marginBottom: "10px",
+                }}
+                onClick={() => dispatch(cartaddNewAdd(false))}
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="17"
+                viewBox="0 0 384 512"
+              >
+                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+              </svg>
+              <div
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  color: "#282c3f",
+                  marginTop: "26.5px",
+                  marginLeft: "10px",
+                }}
+              >
+                Save delivery address
+              </div>
+            </div>
+            <form
+              className="form"
+              //  onSubmit={handleSubmit}
+            >
+              <input
+                placeholder="Flat Name"
+                type="test"
+                value={flat}
+                onChange={(e) => setflate(e.target.value)}
+              />
+              <input
+                placeholder="House No"
+                type="text"
+                value={houseNo}
+                onChange={(e) => sethouseNo(e.target.value)}
+              />
+              <input
+                placeholder="Landmark"
+                type="test"
+                value={landmark}
+                onChange={(e) => setlandmark(e.target.value)}
+              />
+              <input
+                placeholder="City"
+                type="test"
+                value={city}
+                onChange={(e) => setcity(e.target.value)}
+              />
+
+              <input
+                placeholder="Pincode"
+                type="number"
+                value={pincode}
+                onChange={(e) => setpincode(e.target.value)}
+              />
+              <button
+                type="submit"
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (flat === "") {
+                    return alert("Please enter flat name");
+                  }
+                  if (houseNo === "") {
+                    return alert("Please enter house number");
+                  }
+                  if (landmark === "") {
+                    return alert("Please enter the landmark");
+                  }
+                  if (city === "") {
+                    return alert("Please enter the city");
+                  }
+                  if (pincode === "") {
+                    return alert("Please enter pincode");
+                  }
+                  setaddress({
+                    ...address,
+                    flat: flat,
+                    houseNo: houseNo,
+                    landmark: landmark,
+                    city: city,
+                    pincode: pincode,
+                  });
+                  dispatch(cartaddNewAdd(false));
+                }}
+              >
+                ADD NEW
+              </button>
+            </form>
+          </div>
+          <div
+            className="addnewright"
+            onClick={() => dispatch(cartaddNewAdd(false))}
+          ></div>
+        </div>
+      )}
     </>
   );
 }
