@@ -53,15 +53,16 @@ function Cart() {
     <>
       <div className="nav2">
         <div className="nav-left">
-          <Link to="/Home">
-            <div
-              onClick={() => {
-                // dispatch(hoteldatescon(false));
-                // dispatch(hodeldatesDelete());
-              }}
-              className="logo1"
-              style={{ cursor: "pointer" }}
-            >
+          <div
+            onClick={() => {
+              // dispatch(hoteldatescon(false));
+              // dispatch(hodeldatesDelete());
+            }}
+            className="logo1"
+            style={{ cursor: "pointer" }}
+          >
+            <Link to="/Home">
+              {" "}
               <svg
                 className="_8pSp-"
                 viewBox="0 0 559 825"
@@ -88,9 +89,9 @@ function Cart() {
                     <stop offset="1" stopColor="#F15700"></stop>
                   </linearGradient>
                 </defs>
-              </svg>
-            </div>
-          </Link>
+              </svg>{" "}
+            </Link>
+          </div>
 
           <div className="location">Chennai, Tamil Nadu, India</div>
         </div>
@@ -101,10 +102,7 @@ function Cart() {
           {/* <Link to="/Home" style={{ textDecorationLine: "none" }}>
             <div
               className="Search hov"
-              onClick={() => {
-                dispatch(hoteldatescon(false));
-                dispatch(hodeldatesDelete());
-              }}
+             
             >
               <svg
                 style={{ marginTop: "3px" }}
@@ -228,6 +226,7 @@ function Cart() {
         hoteldates.map((data) => (
           <div className="cart" key={data.id}>
             <div
+              className="cartaddresmedia"
               style={{
                 display: "flex",
                 flexDirection: "column",
@@ -271,7 +270,9 @@ function Cart() {
                   </div>
                 </div>
               </div>
-              <div className="cartpay"></div>
+              <div className="cartpay">
+                <div className="payname">Payment</div>
+              </div>
             </div>
             <div className="cartbilling">
               <div className="carthotelhead">
@@ -428,6 +429,7 @@ function Cart() {
                       <div style={{ marginRight: "20px" }}>₹50</div>
                     </div>
                     <div
+                      className="bordermedia"
                       style={{
                         background: "#e9e9eb",
                         width: "312px",
@@ -471,6 +473,7 @@ function Cart() {
                 </div>
               </div>{" "}
               <div
+                className="bordermedia"
                 style={{
                   background: " #282c3f",
                   width: "312px",
@@ -489,7 +492,7 @@ function Cart() {
                 }}
               >
                 <div>TO PAY</div>
-                <div style={{ marginRight: "35px" }}>
+                <div className="mm" style={{ marginRight: "35px" }}>
                   ₹{totalamount + 50 + 60 + 10}
                 </div>
               </div>

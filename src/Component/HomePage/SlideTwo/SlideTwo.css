@@ -43,3 +43,8 @@
   border: none;
   background: rgb(233, 233, 240);
 }
+@media (max-width: 480px) {
+  .carouesl2 {
+    display: none;
+  }
+}

@@ -144,7 +144,6 @@
 .rightsideFood {
   position: relative;
 }
-
 .rightsideFood img {
   width: 118px;
   height: 96px;
@@ -188,4 +187,51 @@
 .add,
 .cartval {
   color: #60b246;
+}
+
+@media (max-width: 480px) {
+  .HotelsContainer {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .HotelsHead {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  .hotels {
+    margin-left: 30px;
+  }
+  .hotelImg {
+    width: 145px;
+    height: 156px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  .hotel {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+  }
+  .mediaview {
+    margin: auto;
+    margin-left: 20px;
+  }
+
+  .hoteloff {
+    width: 145px;
+    top: 100px;
+  }
+  .hotelPage {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0 15px 20px 30px;
+    box-sizing: border-box;
+  }
+  .hoteldetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
 }
